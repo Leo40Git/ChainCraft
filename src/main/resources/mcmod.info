@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chaincraft",
+  "name": "JACCM",
+  "description": "Just Another Chainmail Crafting Mod\nAdds a crafting recipe for chainmail armor.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Moddy10/Leo40Crafter"],
+  "credits": "Moddy10/Leo40Crafter",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

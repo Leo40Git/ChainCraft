@@ -1,0 +1,15 @@
+{
+    "result": {
+        "item": "minecraft:chainmail_helmet"
+    },
+    "pattern": [
+        "ppp",
+        "p p"
+    ],
+    "type": "forge:ore_shaped",
+    "key": {
+        "p": {
+            "item": "chaincraft:chainmail_plate"
+        }
+    }
+}
