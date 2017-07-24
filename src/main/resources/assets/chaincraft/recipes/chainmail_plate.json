@@ -1,7 +1,6 @@
 {
     "result": {
-        "item": "chaincraft:chainmail_plate",
-        "count": 4
+        "item": "chaincraft:chainmail_plate"
     },
     "pattern": [
         "ii",
@@ -11,7 +10,7 @@
     "key": {
         "i": {
             "type": "forge:ore_dict",
-            "ore": "ingotIron"
+            "ore": "nuggetIron"
         }
     }
 }
