@@ -15,7 +15,7 @@ public class ChainCraft {
 
 	public static final String MODID = "chaincraft";
 	public static final String NAME = "JACCM";
-	public static final String VERSION = "1.0.0";
+	public static final String VERSION = "1.0.1";
 
 	@SidedProxy(serverSide = "com.moddy10.chaincraft.proxy.CommonProxy", clientSide = "com.moddy10.chaincraft.proxy.ClientProxy")
 	public static CommonProxy proxy;
