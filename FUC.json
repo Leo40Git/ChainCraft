@@ -1,0 +1,10 @@
+{
+    "homepage": "https://minecraft.curseforge.com/projects/just-another-chainmail-crafting-mod-jaccm",
+    "1.12": {
+        "1.1.0": "Forge Update Checker support! Also, chain armor is now repaired using Chainmail Plates."
+    },
+    "promos": {
+        "1.12-latest": "1.1.0",
+        "1.12-recommended": "1.1.0"
+    }
+}
