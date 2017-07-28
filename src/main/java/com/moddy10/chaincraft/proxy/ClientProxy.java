@@ -1,6 +1,6 @@
 package com.moddy10.chaincraft.proxy;
 
-import com.moddy10.chaincraft.ModItems;
+import com.moddy10.chaincraft.init.ModItems;
 
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;

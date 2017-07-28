@@ -1,16 +1,15 @@
 {
     "result": {
-        "item": "minecraft:chainmail_leggings"
+        "item": "chaincraft:studded_helmet"
     },
     "pattern": [
         "ppp",
-        "p p",
         "p p"
     ],
     "type": "minecraft:crafting_shaped",
     "key": {
         "p": {
-            "item": "chaincraft:chainmail_plate"
+            "item": "chaincraft:studded_plate"
         }
     }
 }

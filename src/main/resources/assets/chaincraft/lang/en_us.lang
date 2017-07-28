@@ -1,1 +1,8 @@
 item.chaincraft.chainmail_plate.name=Chainmail Plate
+item.chaincraft.studded_plate.name=Studded Plate
+item.chaincraft.studded_helmet.name=Studded Cap
+item.chaincraft.studded_chestplate.name=Studded Tunic
+item.chaincraft.studded_leggings.name=Studded Pants
+item.chaincraft.studded_boots.name=Studded Boots
+
+config.chaincraft.studded_armor=Studded armor

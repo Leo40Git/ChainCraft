@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "1.0.1"
-group = "com.moddy10.chaincraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "chaincraft"
+group = "com.moddy10" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "jaccm"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -21,8 +21,10 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12-14.21.1.2423"
+    version = "1.12-14.21.1.2426"
     runDir = "run"
+    
+    //coreMod = "com.moddy10.chaincraft.asm.LoadingPlugin"
     
     // the mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   snapshot are built nightly.
@@ -32,6 +34,14 @@ minecraft {
     mappings = "snapshot_20170624"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
+
+/*
+jar {
+    manifest {
+        attributes("FMLCorePluginContainsFMLMod": "true", "FMLCorePlugin": "com.moddy10.chaincraft.asm.LoadingPlugin")
+    }
+}
+*/
 
 dependencies {
     // you may put jars on which you depend on in ./libs

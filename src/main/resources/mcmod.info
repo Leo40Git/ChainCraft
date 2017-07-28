@@ -1,16 +1,14 @@
-[
-{
+[{
   "modid": "chaincraft",
   "name": "JACCM",
   "description": "Just Another Chainmail Crafting Mod\nAdds a crafting recipe for chainmail armor.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://minecraft.curseforge.com/projects/just-another-chainmail-crafting-mod-jaccm",
-  "updateUrl": "https://minecraft.curseforge.com/projects/just-another-chainmail-crafting-mod-jaccm",
+  "updateJSON": "https://raw.githubusercontent.com/Leo40Git/ChainCraft/master/FUC.json",
   "authorList": ["Moddy10/Leo40Crafter"],
-  "credits": "Moddy10/Leo40Crafter",
+  "credits": "Made by Moddy10/Leo40Crafter, using the Forge documentation and McJty's tutorials",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
-}
-]
+}]

@@ -1,0 +1,15 @@
+{
+    "result": {
+        "item": "chaincraft:studded_plate"
+    },
+    "ingredients": [
+        {
+            "item": "chaincraft:chainmail_plate"
+        },
+        {
+            "type": "forge:ore_dict",
+            "ore": "leather"
+        }
+    ],
+    "type": "forge:ore_shapeless"
+}
