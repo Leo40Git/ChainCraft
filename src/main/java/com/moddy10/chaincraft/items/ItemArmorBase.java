@@ -10,11 +10,18 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ItemArmorBase extends ItemArmor {
+	
+	private String unlocalized;
 
 	public ItemArmorBase(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 		setRegistryName(name);
-		setUnlocalizedName(ChainCraft.MODID + "." + name);
+		unlocalized = ChainCraft.MODID + "." + name;
+	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		return unlocalized;
 	}
 	
 	@SideOnly(Side.CLIENT)

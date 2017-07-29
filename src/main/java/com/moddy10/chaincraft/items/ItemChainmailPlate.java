@@ -13,8 +13,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ItemChainmailPlate extends ItemBase {
 	
 	public ItemChainmailPlate() {
-		setRegistryName("chainmail_plate");
-		setUnlocalizedName(ChainCraft.MODID + ".chainmail_plate");
+		super("chainmail_plate");
 		setCreativeTab(CreativeTabs.MATERIALS);
 	}
 

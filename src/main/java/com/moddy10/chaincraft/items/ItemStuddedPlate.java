@@ -7,8 +7,7 @@ import net.minecraft.creativetab.CreativeTabs;
 public class ItemStuddedPlate extends ItemBase {
 	
 	public ItemStuddedPlate() {
-		setRegistryName("studded_plate");
-		setUnlocalizedName(ChainCraft.MODID + ".studded_plate");
+		super("studded_plate");
 		setCreativeTab(CreativeTabs.MATERIALS);
 	}
 
