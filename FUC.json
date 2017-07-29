@@ -1,7 +1,7 @@
 {
     "homepage": "https://minecraft.curseforge.com/projects/just-another-chainmail-crafting-mod-jaccm",
     "1.12": {
-        "1.1.1": "Mod now actually works! Fixed a NoSuchMethodException that occured on game start",
+        "1.1.1": "Mod now actually works! Fixed a NoSuchMethodException that occurred on game start.",
         "1.1.0": "Forge Update Checker support! Also, studded armor and configuration from the mod screen."
     },
     "promos": {
