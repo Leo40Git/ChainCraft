@@ -1,14 +1,14 @@
 package com.moddy10.chaincraft.proxy;
 
+import com.moddy10.chaincraft.ChainCraft;
 import com.moddy10.chaincraft.ModConfig;
 import com.moddy10.chaincraft.init.ModItems;
-import com.moddy10.chaincraft.items.ItemArmorBase;
-import com.moddy10.chaincraft.items.ItemChainmailPlate;
-import com.moddy10.chaincraft.items.ItemStuddedPlate;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.RegistryEvent;
@@ -21,7 +21,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
-	
+
 	public static Configuration config;
 
 	public void preInit(FMLPreInitializationEvent e) {
@@ -45,18 +45,20 @@ public class CommonProxy {
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> r = event.getRegistry();
-		r.register(ModItems.chainmail_plate = new ItemChainmailPlate());
+		r.register(new Item().setRegistryName("chainmail_plate")
+				.setUnlocalizedName(ChainCraft.MODID + ".chainmail_plate").setCreativeTab(CreativeTabs.MATERIALS));
 		if (ModConfig.studded_armor) {
-			r.register(ModItems.studded_plate = new ItemStuddedPlate());
+			r.register(new Item().setRegistryName("studded_plate")
+					.setUnlocalizedName(ChainCraft.MODID + ".studded_plate").setCreativeTab(CreativeTabs.MATERIALS));
 			ModItems.ARMOR_STUDDED.setRepairItem(new ItemStack(ModItems.studded_plate));
-			r.register(ModItems.studded_helmet = new ItemArmorBase("studded_helmet", ModItems.ARMOR_STUDDED, 1,
-					EntityEquipmentSlot.HEAD));
-			r.register(ModItems.studded_chestplate = new ItemArmorBase("studded_chestplate", ModItems.ARMOR_STUDDED, 1,
-					EntityEquipmentSlot.CHEST));
-			r.register(ModItems.studded_leggings = new ItemArmorBase("studded_leggings", ModItems.ARMOR_STUDDED, 2,
-					EntityEquipmentSlot.LEGS));
-			r.register(ModItems.studded_boots = new ItemArmorBase("studded_boots", ModItems.ARMOR_STUDDED, 1,
-					EntityEquipmentSlot.FEET));
+			r.register(new ItemArmor(ModItems.ARMOR_STUDDED, 1, EntityEquipmentSlot.HEAD).setRegistryName("studded_helmet")
+					.setUnlocalizedName(ChainCraft.MODID + ".studded_helmet"));
+			r.register(new ItemArmor(ModItems.ARMOR_STUDDED, 1, EntityEquipmentSlot.CHEST).setRegistryName("studded_chestplate")
+					.setUnlocalizedName(ChainCraft.MODID + ".studded_chestplate"));
+			r.register(new ItemArmor(ModItems.ARMOR_STUDDED, 2, EntityEquipmentSlot.LEGS).setRegistryName("studded_leggings")
+					.setUnlocalizedName(ChainCraft.MODID + ".studded_leggings"));
+			r.register(new ItemArmor(ModItems.ARMOR_STUDDED, 1, EntityEquipmentSlot.FEET).setRegistryName("studded_boots")
+					.setUnlocalizedName(ChainCraft.MODID + ".studded_boots"));
 		}
 	}
 
