@@ -14,7 +14,7 @@ public class ItemChainmailPlate extends ItemBase {
 	
 	public ItemChainmailPlate() {
 		super("chainmail_plate");
-		setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(CreativeTabs.CREATIVE_TAB_ARRAY[6]);
 	}
 
 }

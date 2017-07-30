@@ -14,7 +14,7 @@ public abstract class ItemBase extends Item {
 	private String unlocalized;
 
 	public ItemBase(String name) {
-		setRegistryName(name);
+		this.setRegistryName(name);
 		unlocalized = ChainCraft.MODID + "." + name;
 	}
 

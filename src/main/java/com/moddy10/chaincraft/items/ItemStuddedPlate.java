@@ -8,7 +8,7 @@ public class ItemStuddedPlate extends ItemBase {
 	
 	public ItemStuddedPlate() {
 		super("studded_plate");
-		setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(CreativeTabs.MISC);
 	}
 
 }

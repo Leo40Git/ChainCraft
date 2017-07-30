@@ -17,9 +17,8 @@ public class ItemArmorBase extends ItemArmor {
 
 	public ItemArmorBase(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
-		setRegistryName(name);
+		this.setRegistryName(name);
 		unlocalized = ChainCraft.MODID + "." + name;
-		setCreativeTab(CreativeTabs.COMBAT);
 	}
 	
 	@Override
