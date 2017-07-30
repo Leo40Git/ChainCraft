@@ -4,6 +4,7 @@ import com.moddy10.chaincraft.ChainCraft;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -19,7 +20,12 @@ public abstract class ItemBase extends Item {
 
 	@Override
 	public String getUnlocalizedName() {
-		return unlocalized;
+		return "item." + unlocalized;
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack ignored) {
+		return getUnlocalizedName();
 	}
 
 	@SideOnly(Side.CLIENT)

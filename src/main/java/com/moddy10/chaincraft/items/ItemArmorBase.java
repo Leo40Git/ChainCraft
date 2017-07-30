@@ -3,8 +3,10 @@ package com.moddy10.chaincraft.items;
 import com.moddy10.chaincraft.ChainCraft;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -17,11 +19,17 @@ public class ItemArmorBase extends ItemArmor {
 		super(materialIn, renderIndexIn, equipmentSlotIn);
 		setRegistryName(name);
 		unlocalized = ChainCraft.MODID + "." + name;
+		setCreativeTab(CreativeTabs.COMBAT);
 	}
 	
 	@Override
 	public String getUnlocalizedName() {
-		return unlocalized;
+		return "item." + unlocalized;
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack ignored) {
+		return getUnlocalizedName();
 	}
 	
 	@SideOnly(Side.CLIENT)
